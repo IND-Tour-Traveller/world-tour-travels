@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 
 function Layout({ children }) {
   return (
-    <div className="layout min-h-screen w-full md:w-[80%] lg:w-[90%] mx-auto">
+    <div className="layout min-h-screen w-[90%] bg-red-400 ">
       <Header />
       <main>{children}</main>
       <Footer />
