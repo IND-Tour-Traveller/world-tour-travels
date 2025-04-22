@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    background: rgba(9, 4, 28, 0.3) url('/assets/images/dwtt_header_bg.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background-color: rgba(9, 4, 28, 0.3); */
+        background-color: rgba(9, 13, 33, 0.4);
+        z-index: 11;
+    }
+}
+.wrapper {
+    background: rgba(255, 255, 255, 0.25);
+    background: rgba(206, 187, 230, 0.25);
+    box-shadow: 0 8px -1rem 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 9999;
+}

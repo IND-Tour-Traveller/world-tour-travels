@@ -1,14 +1,18 @@
 import React from "react";
+import styles from "../styles/HomePage.module.css";
+import Container from "@/components/Container";
 
-
-function HomePage() {
+export default function HomePage() {
   return (
     <>
-      <div className="text-blue-500 text-3xl">
-        DWTT - Frontend 2K25
-      </div>
+      {/* Top Destination */}
+      <section className="w-full min-h-14 bg-teal-50">
+        <Container width={90}>
+          <h3 className="text-slate-700 text-center text-2xl py-2">Top Destinations</h3>
+        </Container>
+      </section>
     </>
   );
 }
 
-export default HomePage;
+

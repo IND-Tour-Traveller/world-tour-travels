@@ -1,7 +1,10 @@
 import React from "react";
 
 function Footer() {
-  return <div>Footer</div>;
+  return <div className="footer bg-[#07091b] text-white text-center py-2 shadow-md mt-4 absolute bottom-0 left-0  self-end w-full">
+    <p className="text-sm">Made with ❤️ by Dev Travellers</p>
+    <p>Copyright 2023</p>
+  </div>;
 }
 
 export default Footer;
