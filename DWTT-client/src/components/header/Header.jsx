@@ -5,15 +5,19 @@ import { IoIosLogIn } from "react-icons/io";
 import { NavLink } from "react-router";
 import { Button } from "../ui/button";
 import { TbMapPinSearch } from "react-icons/tb";
-import Container from "../Container";
+import Container from "../ui/Container";
 
 export default function Header() {
-  console.log(styles);
   return (
     <>
-      <header className={`${styles.header} h-[40vh]`}>
-        <Container styles={`w-full md:w-[90%] lg:w-[90%] mx-auto relative ${styles.wrapper} rounded-3xl h-14 mt-2`}>
-            {/* header Navbar */}
+      <header className={`${styles.header} h-[50vh]`}>
+        {/* header icon banner */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 z-[-9999] bg-gradient-to-b from-slate-900 to-slate-800 opacity-50"></div>
+        {/* header container */}
+        <Container
+          styles={`w-full md:w-[90%] lg:w-[90%] mx-auto relative ${styles.wrapper} rounded-3xl h-14 mt-2`}
+        >
+          {/* header Navbar */}
           <div className="flex items-center justify-between">
             {/*  header logo & title */}
             <div className="flex items-center gap-2">
@@ -31,8 +35,12 @@ export default function Header() {
             </div>
             {/* navigation */}
             <nav className="hidden md:flex gap-4 mr-2 items-center text-sm">
-              <NavLink to="/" className="hover:text-gray-300 inline-flex justify-center items-center">
-                <RiHome9Line size={20} className="text-gray-300" /> <span className="pl-1"> Home</span>
+              <NavLink
+                to="/"
+                className="hover:text-gray-300 inline-flex justify-center items-center"
+              >
+                <RiHome9Line size={20} className="text-gray-300" />{" "}
+                <span className="pl-1"> Home</span>
               </NavLink>
 
               <NavLink to="/about" className="hover:text-gray-300">
@@ -44,17 +52,32 @@ export default function Header() {
               </NavLink>
 
               <NavLink to="/sign-in" className="hover:text-fuchsia-400">
-                <Button variant="outline" className="bg-transparent hover:bg-slate-900 hover:border-slate-800 hover:text-gray-200 border-gray-400 shadow-md"> Sign in <IoIosLogIn size={20} /> </Button>
+                <Button
+                  variant="outline"
+                  className="bg-transparent hover:bg-slate-900 hover:border-slate-800 hover:text-gray-200 border-gray-400 shadow-md"
+                >
+                  {" "}
+                  Sign in <IoIosLogIn size={20} />{" "}
+                </Button>
               </NavLink>
 
-              <NavLink className="hover:text-gray-300 font-normal" to={"/sign-up"}>
-                <Button variant="outline" className="bg-gradient-to-r from-sky-500 to-indigo-500  hover:bg-gradient-to-l hover:from-sky-500 hover:to-indigo-500 transition-all duration-500 ease-in-out"> Sign up </Button>
+              <NavLink
+                className="hover:text-gray-300 font-normal"
+                to={"/sign-up"}
+              >
+                <Button
+                  variant="outline"
+                  className="bg-gradient-to-r from-sky-500 to-indigo-500  hover:bg-gradient-to-l hover:from-sky-500 hover:to-indigo-500 transition-all duration-500 ease-in-out"
+                >
+                  {" "}
+                  Sign up{" "}
+                </Button>
               </NavLink>
             </nav>
           </div>
 
           {/* header context */}
-          <div className="flex flex-col justify-center items-center text-center py-2 mt-6 z-40">
+          <div className="flex flex-col justify-center items-center text-center py-2 mt-8">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-normal text-white">
               {" "}
               Explore the World
@@ -65,7 +88,7 @@ export default function Header() {
             </p>
 
             {/* searchBar */}
-            <div className="flex items-center justify-center gap-4 mt-[2.5rem] bg-gray-200 border-1 border-green-400 px-2 w-10 h-10 rounded-[100px] shadow-md hover:justify-start hover:w-[25%] transition-all ease-in duration-[.2s] hover:delay-75 text-black group search-bar">
+            <div className="flex items-center justify-center gap-4 mt-[2.5rem] bg-gray-200 border-1 border-green-400 px-2 lg:w-10 h-10 rounded-[100px] shadow-md hover:justify-start lg:hover:w-[25%] md:hover:w-[50%] transition-all ease-in duration-300 hover:delay-75 text-black group search-bar">
               <TbMapPinSearch size={24} className="text-green-600" />
               <div className="w-full h-full hidden group-hover:flex group-hover:items-center">
                 <input
@@ -77,10 +100,20 @@ export default function Header() {
             </div>
           </div>
 
+          {/* header banner */}
+          <div className="absolute top-[0%] bottom-0 right-[-5%] w-max z-[-9999]  translate-y-[3.35rem] min-h-[42vh] overflow-hidden group md:hidden lg:block">
+            <img
+              src="/assets/images/man_travel.png"
+              alt="header background"
+              className="w-50% h-[40vh] object-cover rounded-3xl translate-y-14  scale-110 group-hover:scale-125 group-hover:translate-y-12 transition-all duration-500 ease-in-out rotate-3 hover:rotate-0"
+            />
+          </div>
           {/* Todo: if needs */}
         </Container>
+        <div className="absolute bottom-[0%] left-0 w-full  z-[999]">
+        
+        </div>
       </header>
     </>
   );
 }
-
