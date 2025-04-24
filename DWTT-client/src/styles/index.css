@@ -127,3 +127,7 @@ body{
 }
 
 
+video{
+  @apply w-full h-full object-cover;
+  @apply rounded-[var(--radius)];
+}

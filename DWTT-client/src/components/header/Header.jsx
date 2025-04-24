@@ -10,12 +10,12 @@ import Container from "../ui/Container";
 export default function Header() {
   return (
     <>
-      <header className={`${styles.header} h-[50vh]`}>
+      <header className={`${styles.header} h-80 p-2`}>
         {/* header icon banner */}
         <div className="absolute top-0 left-0 right-0 bottom-0 z-[-9999] bg-gradient-to-b from-slate-900 to-slate-800 opacity-50"></div>
         {/* header container */}
         <Container
-          styles={`w-full md:w-[90%] lg:w-[90%] mx-auto relative ${styles.wrapper} rounded-3xl h-14 mt-2`}
+          styles={`w-full md:w-[90%] lg:w-[90%] mx-auto relative ${styles.wrapper} rounded-3xl h-14 `}
         >
           {/* header Navbar */}
           <div className="flex items-center justify-between">
@@ -101,18 +101,16 @@ export default function Header() {
           </div>
 
           {/* header banner */}
-          <div className="absolute top-[0%] bottom-0 right-[-5%] w-max z-[-9999]  translate-y-[3.35rem] min-h-[42vh] overflow-hidden group md:hidden lg:block">
+          {/* <div className="absolute top-[0%] bottom-0 right-[-5%] w-max z-[-9999]  translate-y-[3.35rem] min-h-[42vh] overflow-hidden group md:hidden lg:block">
             <img
               src="/assets/images/man_travel.png"
               alt="header background"
               className="w-50% h-[40vh] object-cover rounded-3xl translate-y-14  scale-110 group-hover:scale-125 group-hover:translate-y-12 transition-all duration-500 ease-in-out rotate-3 hover:rotate-0"
             />
-          </div>
+          </div> */}
           {/* Todo: if needs */}
         </Container>
-        <div className="absolute bottom-[0%] left-0 w-full  z-[999]">
-        
-        </div>
+        <div className="absolute bottom-[0%] left-0 w-full  z-[999]"></div>
       </header>
     </>
   );

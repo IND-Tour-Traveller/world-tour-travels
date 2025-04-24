@@ -3,7 +3,6 @@
     background: rgba(9, 4, 28, 0.3) url('/assets/images/dwtt_header_bg.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
-
     &:before {
         content: '';
         position: absolute;
