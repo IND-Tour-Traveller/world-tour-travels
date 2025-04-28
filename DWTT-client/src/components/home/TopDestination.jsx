@@ -14,6 +14,7 @@ import { ArrowRight, DollarSign, IndianRupee, MapPin, MoveRight, Star } from "lu
 import { Button } from "../ui/button";
 import { useGetDestinationsQuery } from "@/services/destinationService";
 import LoadingErrorEmptyState from "../ui/LoadingErrorEmptyState";
+import Badge from "./Badge";
 
 export default function TopDestination() {
   const [activeIdx, setActiveIdx] = useState(1);
@@ -120,10 +121,8 @@ export default function TopDestination() {
                 No destination spots available ...
               </div>
             ) : (
-              <div className="spots-card w-full h-full rounded-md shadow-lg mt-4 p-2 flex flex-col items-center justify-center bg-[url('/assets/images/flight_spots_bg.jpg')] bg-no-repeat lg:bg-center bg-cover md:bg-cover bg-blend-multiply bg-opacity-50">
-                <div className="badge bg-blue-600 text-white text-sm my-4 rounded-full px-4 py-1">
-                  Popular Places
-                </div>
+              <div className="spots-card w-full h-full rounded-md shadow mt-4 p-2 flex flex-col items-center justify-center bg-[url('/assets/images/flight_spots_bg.jpg')] bg-no-repeat lg:bg-center bg-cover md:bg-cover bg-blend-multiply bg-opacity-50">
+                <Badge className="bg-pink-600 text-white" />
                 <Carousel
                   opts={{
                     align: "start",
@@ -135,10 +134,17 @@ export default function TopDestination() {
                       data?.destinations?.map((item, index) => (
                         <CarouselItem
                           key={index}
-                          className="md:basis-1/3 lg:basis-1/3 select-none">
+                          className="md:basis-1/3 lg:basis-1/3 select-none"
+                        >
                           <div className="">
                             <Card
-                              className={`${index === activeIdx ? "border-[.1rem] border-blue-600" : null} border-[.1rem] hover:border-blue-600 transition-border duration-300 ease-linear hover:shadow-lg rounded-md`} onClick={() => setActiveIdx(index)}>
+                              className={`${
+                                index === activeIdx
+                                  ? "border-[.1rem] border-blue-600"
+                                  : null
+                              } border-[.1rem] hover:border-blue-600 transition-border duration-300 ease-linear hover:shadow-lg rounded-md`}
+                              onClick={() => setActiveIdx(index)}
+                            >
                               <CardContent className="flex flex-col aspect-square p-0 relative overflow-hidden rounded-t-md">
                                 <img
                                   src={item.image}
@@ -167,7 +173,10 @@ export default function TopDestination() {
                               <CardFooter className="px-2 flex-col py-3">
                                 <div className="w-full flex justify-between">
                                   <span className="text-gray-500 font-semibold text-sm flex gap-1 items-center cursor-pointer">
-                                    <MapPin className="text-blue-800" size={16}/>
+                                    <MapPin
+                                      className="text-blue-800"
+                                      size={16}
+                                    />
                                     {item.location}
                                   </span>
                                   <span className="text-gray-600 font-semibold text-sm flex gap-1 cursor-pointer">
