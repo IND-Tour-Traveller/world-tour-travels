@@ -1,0 +1,58 @@
+{
+  "destinations": [
+    {
+      "name": "Bali, Indonesia",
+      "image": "https://images.pexels.com/photos/1249586/pexels-photo-1249586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "category": "Seaside",
+      "location": "Indonesia",
+      "rating": 4.9,
+      "description": "Experience the breathtaking views of white-washed buildings against the deep blue Aegean Sea.",
+      "price": 1299
+    },
+    {
+      "name": "Kyoto, Japan",
+      "image": "https://images.unsplash.com/photo-1513415564515-763d91423bdd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Cultural",
+      "location": "Japan",
+      "rating": 4.8,
+      "description": "Immerse yourself in Japanese culture with ancient temples, traditional tea houses, and beautiful gardens.",
+      "price": 1499
+    },
+    {
+      "name": "Singapore, Malaysia ",
+      "image": "https://images.unsplash.com/photo-1564673658050-596e91b98eaf?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Adventure",
+      "location": "Malaysia",
+      "rating": 4.9,
+      "description": "Discover the ancient Incan citadel set high in the Andes Mountains, a wonder of engineering and history.",
+      "price": 1899
+    },
+    {
+      "name": "Bali, Indonesia",
+      "image": "https://images.unsplash.com/photo-1742677356695-fcb5393b3f64?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Tropical",
+      "location": "Indonesia",
+      "rating": 4.7,
+      "description": "Relax on pristine beaches, explore lush rice terraces, and experience the unique Balinese culture.",
+      "price": 1199
+    },
+    {
+      "name": "Dubai, Abu Dhabi",
+      "image": "https://images.unsplash.com/photo-1570887640193-f0fadabe8cc3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "Luxury",
+      "location": "Dubai",
+      "rating": 4.8,
+      "description": "Experience the opulence of Dubai with its stunning skyscrapers, luxury shopping, and vibrant nightlife.",
+      "price": 1999
+    },
+    {
+      "name": "Maldives",
+      "image": "https://img.freepik.com/free-photo/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand_335224-1094.jpg?t=st=1745796699~exp=1745800299~hmac=e2d34c8b4401611a80305b12b5a7e3b776908253d29a3530229257aee40cbf10&w=1380 ",
+      "category": "Luxury",
+      "location": "Maldives",
+      "rating": 4.9,
+      "description": "Stay in overwater bungalows and swim in crystal-clear turquoise waters in this tropical paradise.",
+      "price": 2499
+    }
+  ]
+}
